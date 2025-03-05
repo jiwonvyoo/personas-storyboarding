@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIPTA Card Swipe Interface Study</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <b>RIPTA Card Swipe Interface Study</b>
+    </header>
+    <div class="container">
+        
+        <h2>Introduction</h2>
+        <p>The RIPTA (Rhode Island Public Transit Authority) is a public transportation accessible to all Brown University students with their student ID. This study explores the usability of this system, focusing on how users (Brown University Students) interact with the swipe mechanism, common difficulties encountered, and potential improvements to enhance accessibility and efficiency.</p>
+        
+        <h2>Part 1: Preparation</h2>
+        <img class="photos" src="./assets/ripta_sketch.png" alt="Sketch of the RIPTA card swipe interface">
+        <p>The study is conducted through direct observation and user interviews to analyze the efficiency of the swipe interface. The key focus is to understand usability barriers and how users respond to system feedback.</p>
+
+        <h3>Interface Selection</h3>
+        <p>The RIPTA card swipe interface allows passengers to pay their fare using a swipe-based card system. The primary components include:</p>
+        <ul>
+            <li>A card slot for swiping student IDs.</li>
+            <li>An audio beep for successful swipes.</li>
+            <li>A green screen that shows success text when transaction is made</li>
+            <li>A "Card Not Valid" error sound, but no other error messages.</li>
+        </ul>
+        <p>The system is simple as it eliminates the need for cash transactions, and requires only a swiping motion to access it. However, it presents ussability challenges such as unclear swipe direction, lack of error-specific feedback and inconsistent card detection</p>
+
+        <h3>Interview Questions</h3>
+        <ol>
+            <li>Can you describe your experience using the RIPTA card swipe interface?</li>
+            <li>What do you find most intuitive about the interface?</li>
+            <li>Have you ever encountered difficulties while using the interface?</li>
+            <li>How does this interface compare to other public transit payment systems?</li>
+            <li>What improvements would you suggest to make the interface more user-friendly?</li>
+            <li>Have you observed other passengers struggling with the interface? If so, what challenges did they face?</li>
+            <li>How do you feel about the feedback provided by the interface (e.g., sounds, screen messages, error notifications)?</li>
+        </ol>
+
+        <h2>Part 2: Recording Observations</h2>
+        
+        <h3>Key Observations</h3>
+        <ul>
+            <li>Users often swiped their cards multiple times before the machine registered the payment.</li>
+            <li>Several users hesitated or reversed their card swipe due to unclear swipe direction.</li>
+            <li>The only error message ever was "Card Not Valid". There were no indication of other issues such as incorrect swipe direction</li>
+            <li>Some users walked away assuming the transaction was successful, only to be stopped by the driver to swipe again</li>
+            <li>Passengers carrying large bags struggled to swipe their cards efficiently as it was placed in an inconvenient angle and height.</li>
+        </ul>
+
+        <h3>User Interview Notes</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Interview Responses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Julia</b></td>
+                    <td>
+                        <blockquote>
+                            <p>"I use RIPTA multiple times a week. It’s the easiest way for me to get to East Providence."</p>
+                            <p>"I can tell where to swipe my card because of the slit, but sometimes I’m not sure which direction to swipe. If I don’t get it right the first time, it’s frustrating."</p>
+                            <p>"Compared to other systems, this one kind of sucks. Most places let you tap your card, which is so much easier."</p>
+                            <p>"I’ve seen other students struggle too. Some don’t know how it’s supposed to work, and they swipe the wrong way."</p>
+                            <p>"Honestly, I think they should change it to a vertical swipe, like how store credit card readers work. I’ve never seen a system that needs a diagonal or horizontal swipe like this one."</p>
+                        </blockquote>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Avery</b></td>
+                    <td>
+                        <blockquote>
+                            <p>"This system kinda sucks. I feel like it’s either broken or just doesn’t work half the time."</p>
+                            <p>"I’ve swiped my card, and it seemed like it worked, but then there was an error noise. The driver just waved me on anyway."</p>
+                            <p>"It seems like the swipe slit is easy to find, but sometimes my card gets stuck or angles weirdly, and I have to adjust it."</p>
+                            <p>"If I had to choose, I’d rather have a scanner like the ones in dining halls. Swiping is just way more effort."</p>
+                            <p>"At least you don’t have to buy a ticket online or go to a terminal beforehand, but still, they should just have a tap system instead."</p>
+                        </blockquote>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Jake</b></td>
+                    <td>
+                        <blockquote>
+                            <p>"I use RIPTA somewhat weekly when I need to get to places that aren’t walkable."</p>
+                            <p>"The small graphic showing how to swipe is helpful, but honestly, it’s faded, and sometimes I don’t even notice it."</p>
+                            <p>"If the graphic wasn’t there, I’d probably swipe in the wrong direction. Even with it, I still get confused sometimes."</p>
+                            <p>"I’ve never actually noticed the sound feedback before. I just look for the green screen to see if it worked."</p>
+                        </blockquote>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Key Findings from User Interviews</h3>
+        <ul>
+            <li><b>Directionality is a Major Challenge</b>
+                <ul>
+                    <li>Users often struggle with swipe direction, leading to multiple failed attempts.</li>
+                    <li>The swipe direction graphic is faded and unclear, causing confusion.</li>
+                    <li>RIPTA’s horizontal and diagonal swipe motion is unintuitive compared to vertical swipes in other systems.</li>
+                </ul>
+            </li>
+            <li><b>Inconsistent Card Detection & Reliability Issues</b>
+                <ul>
+                    <li>Users frequently need multiple swipes before the system registers their card.</li>
+                    <li>Unsuccessful swipes often result in drivers letting passengers board anyway, making enforcement inconsistent.</li>
+                    <li>Many users feel the system is unreliable and question whether their card or the machine is at fault.</li>
+                </ul>
+            </li>
+            <li><b>Feedback System is Not Noticed or Effective</b>
+                <ul>
+                    <li>Users rely almost entirely on sound feedback, but some have never noticed it.</li>
+                    <li>Screen feedback is overlooked, indicating it is not prominent or clear enough.</li>
+                    <li>The "Card Not Valid" error provides no explanation, leaving users unsure why a swipe failed.</li>
+                </ul>
+            </li>
+            <li><b>Suggested Improvements</b>
+                <ul>
+                    <li>Increase visibility of swipe direction indicators.</li>
+                    <li>Introduce contactless payment (tap-to-pay) for a faster experience.</li>
+                    <li>Enhance feedback mechanisms:
+                        <ul>
+                            <li>Make screen notifications larger and more noticeable.</li>
+                            <li>Provide detailed error messages instead of just "Card Not Valid."</li>
+                            <li>Improve audio feedback with clearer cues.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Part 3: Personas</h2>
+
+        <div class="two-column">
+            <div class="section">
+                <h3>Person A (Frustrated Commuter)</h3>
+                <p>Person A is a Brown University student who relies on RIPTA weekly but finds the swipe system frustrating due to frequent malfunctions and unclear feedback.</p>
+                <img class="persona" src="./assets/person_A.png" alt="Persona A">
+                <ul>
+                    <li>Unclear error messages make it difficult to determine why a swipe fails.</li>
+                    <li>Inconsistent card detection, requiring multiple attempts.</li>
+                    <li>No clear visual or written instructions on swipe direction.</li>
+                    <li>No contactless payment option, making it outdated compared to other transit systems.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Person B (New User)</h3>
+                <p>Person B is a first-year Brown University student new to RIPTA, experiencing anxiety and confusion due to the lack of clear instructions.</p>
+                <img class="persona" src="./assets/person_B.png" alt="Persona B">
+                <ul>
+                    <li>No clear instructions on where or how to swipe the card.</li>
+                    <li>Anxiety from failing swipes and holding up the line.</li>
+                    <li>Unfamiliar with feedback cues, unsure if a swipe was successful.</li>
+                    <li>Swipe system is different from other systems, making it non-intuitive.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Part 4: Storyboarding</h2>
+        <p>The storyboard illustrates Person B's experience using the RIPTA swipe system for the first time.</p>
+        <img src="./photos/storyboard.png" alt="Storyboard for Persona B's journey">
+
+        <h3>Storyboard Captions:</h3>
+        <ol>
+            <li>Arriving at the bus stop, Person B checks the schedule, feeling slightly nervous.</li>
+            <li>Observing others boarding, she watches as passengers swipe their cards.</li>
+            <li>She swipes her card too fast, with no response.</li>
+            <li>She flips her card and swipes again but still fails.</li>
+            <li>A line forms behind her, making her feel pressured.</li>
+            <li>The bus driver advises her to swipe slower.</li>
+            <li>She hears the beep and walks to her seat.</li>
+            <li>She wonders if she’ll remember how to do it next time.</li>
+        </ol>
+
+        <h2>Part 5: Reflection</h2>
+        <p>This study highlights key usability flaws in the RIPTA card swipe interface. Common issues include:</p>
+        <ul>
+            <li>Lack of clear feedback when a swipe fails.</li>
+            <li>No clear instructions on swipe direction.</li>
+            <li>Inconsistent card detection, leading to multiple attempts.</li>
+        </ul>
+        <p>Potential improvements include adding contactless payment, better visual guidance, and enhanced error messages.</p>
+
+        <h2>Deployment</h2>
+        <p>The webpage has been deployed with Vercel. <a href="https://ripta-usability-study.vercel.app/" target="_blank">View Live Page</a></p>
+    </div>
+
+    <div class="footer">
+        CSCI1300 Spring 2025 Jiwon Yoo
+    </div>
+</body>
+</html>
